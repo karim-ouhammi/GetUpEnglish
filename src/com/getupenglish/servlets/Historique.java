@@ -42,11 +42,13 @@ public class Historique extends HttpServlet {
 
         for ( Map.Entry<Long, List<CoursUtilisateur>> entry : mapCoursUtilisateur.entrySet() ) {
             List<CoursUtilisateur> listeCoursUtlisateur = entry.getValue();
-            for ( CoursUtilisateur coursUtilisateur : listeCoursUtlisateur ) {
-                if ( coursUtilisateur.getUtilisateur().getEmail().equals( utilisateur.getEmail() ) ) {
-                    map.put( coursUtilisateur.getCours().getId(), coursUtilisateur );
-                    nombreDesExercices++;
-                    moyenne += coursUtilisateur.getNote();
+            if ( listeCoursUtlisateur != null ) {
+                for ( CoursUtilisateur coursUtilisateur : listeCoursUtlisateur ) {
+                    if ( coursUtilisateur.getUtilisateur().getEmail().equals( utilisateur.getEmail() ) ) {
+                        map.put( coursUtilisateur.getCours().getId(), coursUtilisateur );
+                        nombreDesExercices++;
+                        moyenne += coursUtilisateur.getNote();
+                    }
                 }
             }
         }
