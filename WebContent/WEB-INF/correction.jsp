@@ -101,8 +101,8 @@
             
         
             <c:if test="${ empty sessionScope.sessionUtilisateur }">
-                <p>Merci de vous <a href="<c:url value="/connexion"/>">connecter</a> pour sauvegarder votre résultat.</p>
-            </c:if>
+                <p>Merci de vous <a href="<c:url value="/connexion"/>">connecter</a> ou vous <a href="<c:url value="/inscription"/>">inscrire</a> pour sauvegarder votre résultat.</p>
+            </c:if> 
             
             <div>
                 Votre note : 
