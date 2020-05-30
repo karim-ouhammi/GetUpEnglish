@@ -6,5 +6,5 @@ Université Moulay Ismail, Faculté des sciences, Meknès
 Professeur : Ali BEKRI  
 Réalisé par : OUHAMMI Karim, El FILALI Hamza et KOKOYE Nithael
 
-WebContent : Contient tous les fichiers JSP/HTML et CSS (VUE dans le modèle MVC).  
-src : Contient tous les packages et  les ressources Java (les modèles et les contrôleurs, le "M" et le "C" du MVC).
+WebContent : Contient tous les fichiers JSP/HTML et CSS (Vue dans le modèle MVC).  
+src : Contient tous les packages et  les ressources Java (Les modèles et les contrôleurs, le "M" et le "C" du MVC).
