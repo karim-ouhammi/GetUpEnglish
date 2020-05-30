@@ -46,14 +46,14 @@
 		                    <td class="c_text"> <c:out value="${ mapUsers.value.telephone }"/> </td>
 		                    <td class="c_text"> <joda:format value="${  mapUsers.value.dateInscription }" pattern="dd/MM/yyyy 'à' HH'h'mm" ></joda:format> </td>
 		                    <td class="c_text">
-			                     <c:if test="${ !mapUsers.value.isAdmin() }">
-								    <a href="
-								        <c:url value="/adminSuppressionUtilisateur">
-								            <c:param name="email" value="${ mapUsers.key }" />
-								        </c:url>">
-								        <i class="fa fa-trash-o" aria-hidden="true"></i>
-								    </a>
-								</c:if>
+						<c:if test="${ !mapUsers.value.isAdmin() }">
+						    <a href="
+							<c:url value="/adminSuppressionUtilisateur">
+							    <c:param name="email" value="${ mapUsers.key }" />
+							</c:url>">
+							<i class="fa fa-trash-o" aria-hidden="true"></i>
+						    </a>
+						</c:if>
 		                    </td>
 		                </tr>
 	                </c:forEach>
