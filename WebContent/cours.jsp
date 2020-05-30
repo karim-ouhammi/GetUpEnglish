@@ -55,14 +55,14 @@
 	                    ${ mapCours.value.difficulte eq 3 ? 'red' : '' }
 	                    " >
 	                        <span>
-	                            <c:choose>
-									<c:when test="${ mapCours.value.titre.length() gt 25 }">
-									    ${ mapCours.value.titre.substring(0,25) } . . .
-									</c:when>
-									<c:otherwise>
-									    ${ mapCours.value.titre }
-									</c:otherwise>
-								</c:choose>
+					<c:choose>
+						<c:when test="${ mapCours.value.titre.length() gt 25 }">
+						    ${ mapCours.value.titre.substring(0,25) } . . .
+						</c:when>
+						<c:otherwise>
+						    ${ mapCours.value.titre }
+						</c:otherwise>
+					</c:choose>
 	                        </span>
 	                    </div>
 	                </div>                        
