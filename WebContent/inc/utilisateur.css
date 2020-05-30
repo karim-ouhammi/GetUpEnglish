@@ -1,0 +1,189 @@
+main *{
+    transition: all 0s;
+    font-size: 0.9rem;
+    color: gray;
+}
+.title {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.title h1 .titel_text{
+    font-size: 2rem;
+    padding: 1rem;
+    margin-top: 2rem ;
+}
+.user_nav{
+    width: 100%;
+    text-align: center;
+}
+.user_nav .u_icon i{
+    display: none;
+}
+.user_navbar{
+    padding: 0;
+    margin:0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.user_navbar .user_navbar_items{
+    margin: 1rem 2rem 1rem 2rem;
+    padding: 1rem;
+    width: 6rem;
+    height: 1.5rem;
+    box-shadow: 0px 1px 5px 1px lightgray;
+    cursor: pointer;
+    border-radius: 2rem;
+    transition: 600ms ease;
+    /* background-color: #23232e; */
+}
+.u_link_text{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: rgb(26, 179, 240);
+    filter: grayscale(100%) opacity(0.7);
+    transition: 600ms ease;
+}
+.user_nav .u_icon:hover {
+    filter: grayscale(0%) opacity(1);
+    background: #141418;
+    color: white;
+}
+.user_nav .u_icon .u_text{
+    margin: auto 2rem auto 2rem ;
+    padding: 0.5rem;
+    /* background-color: #141418; */
+    text-align: center;
+    color: rgb(26, 179, 240);
+    display: none;
+    box-shadow: 0px 1px 5px 1px lightgray;
+    border-radius: 2rem;
+}
+/* .u_text{
+    margin: auto 2rem auto 2rem ;
+    padding: 0.5rem;
+    background-color: #3e3e49;
+    text-align: center;
+    color: rgb(26, 179, 240);
+    display: none;
+    box-shadow: 0px 1px 5px 1px lightgray;
+    border-radius: 2rem;
+} */
+.user_navbar_items:hover .u_link_text {
+    filter:grayscale(0%) opacity(1);
+    color: white;
+}
+.user_navbar_items:hover  {
+    background: rgb(26, 179, 240);
+    /* color: white ; */
+}
+.user_navbar_items:hover .u_text {
+    color: white ;
+}
+
+
+/* Contenue repeter : */
+.contenue{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.c_tab{
+    width: 100%;
+    /* overflow: hidden;
+    overflow-x: scroll; */
+}
+.c_tab table{
+    width:100%;
+    table-layout: fixed;
+    word-wrap: break-word; 
+    padding: 1rem;
+    height: 2rem;
+    box-shadow: 0px 1px 5px 1px lightgray;
+    cursor: pointer;
+    border-radius: 2rem;
+    transition: 0.7s ease-in;
+    /* background-color: #23232e; */
+}
+.c_item , .c_item_1{
+    width:90%;
+    margin: 1rem 2rem 1rem 2rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    /* background-color: #23232e; */
+    height: 3rem;
+    transition: 0.3s ease-in;
+}
+.c_item td, .c_item_1 td{
+    color: rgb(184, 181, 181);
+}
+.c_item_1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.c_item:hover, .c_item_1:hover {
+    filter:grayscale(0%) opacity(1);
+    background: rgb(26, 179, 240);
+}
+.c_item:hover td, .c_item_1:hover td {
+    color: white;
+}
+.c_item{
+    padding: 0.5rem;
+    height: 1.5rem;
+}
+.c_text, .c_text_email{
+    margin: 0.5rem;
+    padding: .3rem;
+    width: 2.8vw;
+    text-align: center;
+    font-size: 1rem;
+}
+.c_text_email{
+    width: 15vw;
+}
+.c_text:first-child{
+    width: 0.5vw;
+}
+.c_text:last-child{
+    width: 2vw;
+}
+@media only screen and ( max-width: 600px){
+    .user_navbar{
+        display: none;
+    }
+    .c_text, .c_text_email{
+    font-size: 0.5rem;
+
+    }
+    .user_nav .u_icon{
+        /* width: 2rem; */
+        display: flex;
+        margin: 1rem 2rem 1rem 2rem;
+        padding: 1rem;
+        box-shadow: 0px 1px 5px 1px lightgray;
+        border-radius: 2rem;
+        flex-direction: column;
+        cursor: pointer;
+        background-color: rgb(26, 179, 240);
+        height: 2.5rem;
+        justify-content: space-between;
+        transition: 600ms ease;
+    }
+    .user_nav .u_icon i{
+        display: block;
+        font-size: 2.5rem;
+        color: white;
+        transition: 600ms ease;
+    }
+    .user_nav .u_icon:hover i{
+        color: white;
+    }
+    .user_nav .u_icon:hover .u_text{
+        color: white;
+        display: block;
+        background-color: rgb(26, 179, 240);
+    }
+}

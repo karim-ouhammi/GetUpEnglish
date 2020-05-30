@@ -1,0 +1,47 @@
+main .info *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main .info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .info .info_line{
+    display: flex;
+    width:80%;
+    margin: 1rem 0;
+    justify-content: start ;
+}
+main .info .info_line .info_content{
+    padding: 1rem 3rem;
+    margin: 0.1rem;
+    min-width: 30rem;
+    transition: 300ms ease;
+}
+main .info .info_line .info_content .info_text{
+    word-wrap: break-word;
+    margin: 0 3rem;
+    color: black
+}
+main .info .info_line .info_content .fa{
+    color: black;
+    font-size:  1.5rem;
+}
+main .info .info_line .info_content:hover{
+    box-shadow: 3px 2px 11px -1px rgba(0,0,0,0.75);
+    
+
+}
+main .info .info_line .info_content:hover .info_text , main .info .info_line .info_content:hover
+.fa{
+    color: #2471A3;
+}
+@media only screen and (max-width: 600px ){
+    main .info .info_line,main .info .info_line .info_content {
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+}

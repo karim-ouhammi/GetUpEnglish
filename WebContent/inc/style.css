@@ -1,0 +1,454 @@
+/* --------- contenu de la page ------------- */
+main{
+    margin-left: 5rem;
+    padding: 1rem;
+    min-height: calc(100vh - 400px);
+    /* background-color: #5DADE2 ; */
+}
+main p,main h1{
+    color: black;
+}
+main .intro {
+    width: 100%;
+    /* background-image: url(bp.jpg) ; */
+    background-size: cover ;
+    background-repeat: no-repeat; 
+    
+
+}
+
+/* ------------------------------repeated code------------------------------ */
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina+2&display=swap');
+:root{
+    font-size: 16px;
+    font-family: 'Baloo Bhaina 2', cursive;
+    --text-primary: white;
+    --text-secondary: white;
+    --bg-primary:#3498DB;
+    --bg-secondary:#2471A3;
+    --bg-therd:rgb(29, 89, 129);
+    
+}
+*{
+    list-style: none;
+    text-decoration: none;
+}
+html,body{
+    margin:0;
+    padding:0;
+    height: 100%;
+    color:black;
+    /* background: linear-gradient(to right, #36d1dc, #5b86e5); */
+    /* background-image: url("bg1.png"); */
+    background: rgb(255, 255, 255);
+    background-size: cover;
+}
+/* scrolle bare setting */
+body::-webkit-scrollbar{
+    width: 0.5rem;
+}
+body::-webkit-scrollbar-track{
+    background: #ffffff;
+}
+body::-webkit-scrollbar-thumb{
+    background: rgb(26, 179, 240);
+}
+.navbar-nav::-webkit-scrollbar{
+    width: 0rem;
+    height: 0.4rem;
+    transition: all ease 0.6s;
+}
+.navbar-nav::-webkit-scrollbar-track{
+    background: white;
+    transition: all ease 0.6s;
+}
+.navbar-nav::-webkit-scrollbar-thumb{
+    background: rgb(26, 179, 240);
+    transition: all ease 0.6s;
+}
+
+.contenue_footer .section_footer .form form div input:-webkit-autofill,
+.contenue_footer .section_footer .form form div input:-webkit-autofill:hover, 
+.contenue_footer .section_footer .form form div input:-webkit-autofill:focus,
+.contenue_footer .section_footer .form form div textarea:-webkit-autofill,
+.contenue_footer .section_footer .form form div textarea:-webkit-autofill:hover, 
+.contenue_footer .section_footer .form form div textarea:-webkit-autofill:focus{
+    border-color: var(--bg-secondary);
+    background:rgb(49, 67, 85) ;
+  -webkit-text-fill-color: black;
+  -webkit-box-shadow: 1px 2px 8px -1px rgba(0,0,0,0.75) inset;
+}
+
+/* ---------- nav bar worck --------------- */
+.navbar{
+    position: fixed;
+    background-color: var(--bg-primary);
+    box-shadow: 3px 2px 11px -1px rgba(0,0,0,0.75);
+    transition: width 200ms ease;
+}
+.navbar-nav{
+    padding: 0;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-item{
+    width:100%;
+}
+.nav-item:last-child{
+    margin-top: auto ;
+    margin-bottom: 1rem;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    filter: grayscale(100%) opacity(0.7);
+    transition: 600ms ease;
+}
+
+.nav-link:hover{
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+.link-text{
+    display:none;
+    margin-left: 0;
+}
+.nav-link .fa{
+    font-size: 1.3rem;
+    margin: 0 1.5rem;
+    color: white;
+    transition: 600ms ease;
+}
+.navbar:hover .nav-link{
+    color:white;
+}
+.logo{
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+.logo .link-text{
+    padding-left: 1.5rem ;
+}
+.logo i.fa{
+    min-width: 5rem;
+    margin: 0 -0.2rem;
+    transform: rotate(0deg);
+    transition: transform 600ms ease;
+}
+.navbar:hover .logo i.fa{
+    margin: 0 1.6rem;
+    transform: rotate(-180deg);
+}
+/* ------------------------------repeated code End------------------------------ */
+
+
+
+/* Chemin de navigation */
+.chemin{
+    background-color: white;
+    box-shadow: 3px 2px 11px -1px rgba(0,0,0,0.75);
+    transition: width 200ms ease;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.chemin .chemin_ul{
+    padding: 0;
+    margin:0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.chemin .chemin_ul .chemin_li{
+    color: black;
+    margin: 0 ;
+    padding: 0 1rem;
+    cursor: pointer;
+    transition: 400ms ease;
+}
+.chemin .chemin_ul .chemin_li:hover{
+    color: white;
+    background-color: var(--bg-primary);
+}
+.btn_fix_div{
+    position: fixed;
+    cursor: pointer;
+    background-color: var(--bg-secondary);
+    width: 8rem;
+    height: 2rem;
+    padding: 0.5rem;
+    line-height: 35px;
+    bottom: 5%;
+    right: 3%;
+    box-shadow: 3px 2px 11px -1px rgba(0,0,0,0.75);
+    border-radius: 2rem;
+    text-align: center;
+    transition: 600ms ease;
+    
+}
+.btn_fix_link{
+    display: flex;
+    transition: 600ms ease;
+    color: var(--text-primary);
+    filter: white scale(100%) opacity(0.7);
+}
+.btn_fix_link .fa{
+    margin-right: 1rem ;
+    margin-left: 0.5rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    color: white;
+}
+.btn_fix_text{
+    color: white;
+}
+.btn_fix_div:hover{
+    background: var(--bg-therd);
+    box-shadow: 1px 2px 9px -1px rgba(0, 0, 0, 0.925);
+}
+.btn_fix_div:hover .btn_fix_link{
+    
+    filter: scale(0%) opacity(1);
+    color: var(--text-secondary);
+}
+.EAL_div ul{
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    /* align-items: center; */
+    display: none;
+    transition: 600ms ease;
+}
+.EAL_item{
+    width:100%;
+}
+.EAL_link{
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    color: var(--text-primary);
+    filter: grayscale(100%) opacity(0.7);
+    transition: 600ms ease;
+}
+.EAL_link_text{
+    margin-left: 4rem;
+}
+.EAL_link:hover{
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+
+
+/* --------- fin de la page ------------- */
+.footer *{
+    margin: 0;
+    padding: 0;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-left: 5rem;
+    margin-bottom: 0;
+    color: rgb(255, 255, 255);
+    padding : 1rem 0 0 0;
+    box-sizing: border-box;
+    background: #212F3D;
+}
+.contenue_footer{
+    height: 320px;
+    height: 100%;
+    display: flex;
+    word-wrap: break-word;
+}
+.contenue_footer .section_footer{
+    width: 30%;
+    /* border: solid 1px black; */
+    padding: 0 1rem;
+}
+.contenue_footer .section_footer h2{
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.contenue_footer .section_footer .comunication{
+    width:100%;
+    margin: 2rem 0.1rem 0 0.1rem ;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.contenue_footer .section_footer .comunication a{
+    margin: 0 0.3rem;
+}
+.contenue_footer .section_footer .comunication a span{
+    width: 2rem;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem;
+    color: rgb(253, 253, 253);
+    background: rgb(49, 67, 85);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 300ms ease;
+    text-align: center;
+}
+.contenue_footer .section_footer .comunication a span:hover{
+    background: var(--bg-primary);
+    color: rgb(255, 255, 255);
+}
+.contenue_footer .section_footer .form form div input,
+.contenue_footer .section_footer .form form div textarea{
+    padding: 0.4rem;
+    background: rgb(49, 67, 85);
+    border: none;
+    color: white;
+}
+.contenue_footer .section_footer .form form div input:focus,
+.contenue_footer .section_footer .form form div textarea:focus{
+    /* border: solid 2px red; */
+}
+.contenue_footer .Addresses div span .fa{
+    font-size: 1.5rem;
+    color: var(--bg-primary);
+}
+.contenue_footer .section_footer div span {
+    cursor: default;
+    margin-top: 0.5rem;
+}
+.footer .fin_footer{
+    width: 100%;
+    background: var(--bg-secondary);
+    text-align: center;
+    color: white;
+    bottom: 0;
+    margin-top: 0.2rem;
+}
+
+.contenue_footer .section_footer .form form .envoyer{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background: rgb(49, 67, 85) ;
+}
+
+@media only screen and (min-width: 600px ) and (min-height: 500px){
+    
+    .nav-item:hover .EAL_div ul{
+        display: flex;
+    }
+    .navbar{
+        width: 5rem;
+        height: 100vh;
+    }
+    .navbar-nav{
+        height: 100vh;
+    }
+    .navbar:hover{
+    width: 16rem;
+    }
+    .navbar:hover .link-text{
+        display: block;
+        /* transition: opacity 600ms; */
+    }
+}
+@media only screen and (max-height: 640px) and ( min-width: 601px){
+    .navbar-nav{
+        height: 100vh;
+    }
+    .navbar:hover .navbar-nav{
+        overflow-y: scroll;
+        transition: all .6s ease;
+    }
+    
+    .navbar{
+        transition: 0.6s ease;
+    }
+    .navbar:hover .link-text{
+        display: block; 
+        transition: all 2s ease;
+    }
+} 
+@media only screen and (max-width: 600px ){
+    .btn_fix_text{
+        display: none;
+        width: 2rem;
+    }
+    .btn_fix_div{
+        width: 2rem;
+    }
+    .btn_fix_link{
+        width: 2rem;
+    }
+    .navbar{
+        top:0;
+        margin-bottom: 1rem;
+        width: 100vw;
+        height: 5rem;
+    }
+    .navbar-nav{
+        width: 100vw;
+    }
+    .navbar:hover .navbar-nav{
+        overflow-x: scroll;
+        transition: all .6s ease;
+    }
+    .logo{
+        display: none;
+    }
+    .navbar-nav {
+        flex-direction: row;
+    }
+    .nav-item:last-child{
+        margin: 0rem 0 0 auto;
+    }
+    .nav-link{
+        text-align: center;
+        justify-content: center;
+    }
+    .nav-item:last-child{
+        margin-left: auto; 
+    }
+    .nav-link .fa{
+        font-size: 1.3rem;
+    }
+    main{
+        padding-top: 5rem;
+        margin-left: 0;
+    }
+    .footer{
+    margin-left: 0rem;
+    }
+    .contenue_footer{
+        flex-direction: column;
+        height: 100%;
+    }
+    .section_footer{
+        margin-bottom: 2rem;
+        min-width: 400px;
+    }
+}
+@media only screen and (max-width: 400px ){
+    .chemin_ul{
+        flex-direction: column;
+    }
+    .chemin_ul .chemin_li{
+        text-align: center;
+        margin:0;
+        padding: 0;
+        width: 50%;
+    }
+}

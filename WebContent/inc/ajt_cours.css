@@ -1,0 +1,28 @@
+.ins-log{
+    max-width: 800px;
+    width:100%;
+    padding: 1rem;
+   	background: white;
+    box-shadow: 3px 2px 11px -1px rgba(0,0,0,0.75);
+    border-radius: 1rem;
+    margin: 5rem auto 1.5rem auto ;
+}
+.input_div{
+    margin-top: 1.2rem;
+    justify-content: space-evenly;
+}
+.input_div .input,
+.input_div .genre_div{
+    max-width: 30rem;
+}
+.form form .center{
+	display:flex;
+	justify-content: space-around;
+}
+.choose{
+	width: 100%;
+    text-align: center;
+}
+.choose input{
+	margin: 0 0.5rem;
+}

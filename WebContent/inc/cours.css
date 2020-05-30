@@ -1,0 +1,131 @@
+.cours *{
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+.cours{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cours .cours_line{
+    display: flex;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    justify-content: center;
+}
+
+ .cours_div{
+    padding-top: 1rem;
+    margin: 1rem;
+    width: 18rem;
+    height: 9rem;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    text-align: center;
+    background: white;
+    box-shadow: 3px 2px 11px -1px rgba(0,0,0,0.75);
+    transition: 400ms ease;
+}
+.cours_div a{
+    padding: 0;
+    margin-top: auto;
+} 
+.cours_div .cours_info{
+    transform: translate(0x,110px) ;
+
+    transition: 500ms ease;
+}   
+.cours_div .cours_titre{
+    background: #3498DB;
+    margin-top: auto;
+    padding: 0 3rem;
+    transition: 500ms ease;
+}
+.cours_div .orrange{
+    background: #f5af19;
+}
+.cours_div .red{
+    background: #f12711;
+}
+.cours_text{
+    color: gray;
+    transition: 600ms ease;
+}
+
+ .cours_div:hover{
+    height: 10rem;
+    width: 19rem;
+    box-shadow: 1px 2px 8px -1px rgba(0,0,0,0.75);
+}
+.cours_div:hover .cours_text{
+    color: black;
+}
+.cours_div:hover .cours_titre{
+    background: rgb(60, 170, 243);
+}
+.cours_div:hover .orrange{
+    background: #fcbc31;
+}
+.cours_div:hover .red{
+    background: #ff230a;
+}
+.aff *{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+.aff{
+    display: flex;
+    flex-direction: column;
+    
+    margin: 0;
+    padding: 1.5rem;
+
+}
+.aff_top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+    color: #3498DB;
+
+}
+.aff_top .aff_titre span{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.aff_top .aff_type span{
+    color: Gray;
+}
+.aff_top .aff_type span a{
+    margin: 0 0.5rem;
+    color: black;
+}
+.aff_top  .bold span{
+    font-weight: bold;
+}
+.aff_top .aff_date span{
+    color: Gray;
+}
+.aff_contenue {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 5rem;
+}
+
+.aff_contenue .aff_signe {
+    color: #3498DB;
+    margin-left: auto;
+    margin-top: 1rem;
+}
+
+blockquote {
+  background: #ffffff; /* #f9f9f9 */
+  border-left: 3px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+}
+
