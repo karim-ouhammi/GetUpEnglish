@@ -49,49 +49,48 @@
         </c:if>
         
         <div class="aff">
-			<div class="aff_top">
-			    <div class="aff_titre">
-			        <span ><c:out value="${ requestScope.cours.titre }"/></span>
-			    </div>
-			    <div class="aff_type">
-			        <span><c:out value="${ requestScope.cours.categorie }"/></span>
-			    </div>
-			    <div class="aff_type">
-			        <span>
-			        <c:choose>
-			                <c:when test="${ requestScope.cours.difficulte == 1 }">Facile</c:when>
-			                <c:when test="${ requestScope.cours.difficulte == 2 }">Moyen</c:when>
-			                <c:when test="${ requestScope.cours.difficulte == 3 }">Difficile</c:when>
-			            </c:choose>
-			        </span>
-			    </div>
-			    <div class="aff_date">
-			        <span>Ajouté le <joda:format value="${  requestScope.cours.date }" pattern="dd/MM/yyyy 'à' HH'h'mm" ></joda:format></span>
-			    </div>
-			</div>
-			<div class="aff_contenue">
-			    <span>
-			        ${ requestScope.cours.contenu }
-			    </span>
-			</div>
+		<div class="aff_top">
+		    <div class="aff_titre">
+			<span ><c:out value="${ requestScope.cours.titre }"/></span>
+		    </div>
+		    <div class="aff_type">
+			<span><c:out value="${ requestScope.cours.categorie }"/></span>
+		    </div>
+		    <div class="aff_type">
+			<span>
+			<c:choose>
+				<c:when test="${ requestScope.cours.difficulte == 1 }">Facile</c:when>
+				<c:when test="${ requestScope.cours.difficulte == 2 }">Moyen</c:when>
+				<c:when test="${ requestScope.cours.difficulte == 3 }">Difficile</c:when>
+			    </c:choose>
+			</span>
+		    </div>
+		    <div class="aff_date">
+			<span>Ajouté le <joda:format value="${  requestScope.cours.date }" pattern="dd/MM/yyyy 'à' HH'h'mm" ></joda:format></span>
+		    </div>
+		</div>
+		<div class="aff_contenue">
+		    <span>
+			${ requestScope.cours.contenu }
+		    </span>
+		</div>
         </div>
-        
         
         <c:if test="${ !empty requestScope.listeReponses }">
             <div class="aff">
                 <div class="aff_top">
-                    <div class="aff_titre">
-	                    <span >
-		                    Exerice
-		                    <c:if test="${ sessionScope.sessionUtilisateur.isAdmin() }">
-		                        <a href="<c:url value="/adminSuppressionExercice">
-		                            <c:param name="id" value="${ requestScope.cours.id }"/>
-		                        </c:url>">
-		                            <i class="fa fa-trash-o" aria-hidden="true"></i>
-		                        </a>
-		                    </c:if>
-	                    </span>
-	                </div>
+			<div class="aff_titre">
+				<span >
+				    Exerice
+				    <c:if test="${ sessionScope.sessionUtilisateur.isAdmin() }">
+					<a href="<c:url value="/adminSuppressionExercice">
+					    <c:param name="id" value="${ requestScope.cours.id }"/>
+					</c:url>">
+					    <i class="fa fa-trash-o" aria-hidden="true"></i>
+					</a>
+				    </c:if>
+				</span>
+	        	</div>
                 </div>
                 <c:if test="${ empty sessionScope.sessionUtilisateur }">
                     <p>Merci de vous <a href="<c:url value="/connexion"/>">connecter</a> ou vous <a href="<c:url value="/inscription"/>">inscrire</a> pour sauvegarder votre résultat.</p>
