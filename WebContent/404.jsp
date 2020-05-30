@@ -56,23 +56,23 @@
             
             <c:choose>
                  <c:when test="${ empty sessionScope.sessionUtilisateur }">
-                    <div class="info_line">
-                        <div class="info_content">
-		                    <a href="<c:url value="/connexion"/>">
-		                        <i class="fa fa-sign-in"></i>
-		                        <span class="info_text">Connexion</span>
-		                    </a>
-		                </div>
-		            </div>
+			<div class="info_line">
+				<div class="info_content">
+					<a href="<c:url value="/connexion"/>">
+						<i class="fa fa-sign-in"></i>
+						<span class="info_text">Connexion</span>
+					</a>
+				</div>
+			</div>
 		            
-		            <div class="info_line">
-                        <div class="info_content">
-                            <a href="<c:url value="/inscription"/>">
-                                <i class="fa fa-user-plus"></i>
-                                <span class="info_text">Inscription</span>
-                            </a>
-                        </div>
-                    </div>
+		        <div class="info_line">
+                        	<div class="info_content">
+				    <a href="<c:url value="/inscription"/>">
+					<i class="fa fa-user-plus"></i>
+					<span class="info_text">Inscription</span>
+				    </a>
+                        	</div>
+                    	</div>
                  </c:when>
                  <c:otherwise>
                     <div class="info_line">
@@ -112,9 +112,7 @@
             </c:choose>
         
         </div>
-        
-        
-    
+
     </main>
     
     <c:import url="/inc/footer.jsp" />
