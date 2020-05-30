@@ -48,12 +48,20 @@
                                     <c:out value="${ mapHistorique.value.cours.titre }"/>
                                 </a>
                             </td>
-                            <td class="c_text"><fmt:formatNumber type="number" maxIntegerDigits="3"  maxFractionDigits="2" value="${ mapHistorique.value.note }" />/20</td>
+                            <td class="c_text">
+                                <strong>
+                                    <fmt:formatNumber type="number" maxIntegerDigits="3"  maxFractionDigits="2" value="${ mapHistorique.value.note }" />/20
+                                </strong>
+                            </td>
 						</tr>  
                     </c:forEach>
-                    <tr>
+                    <tr class="c_item">
                         <td class="c_text"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
-                        <td class="c_text_email">Moyenne</td>
+                        <td class="c_text_email">
+                            <a href="#">
+                                Moyenne
+                            </a>
+                        </td>
                         <td class="c_text">
                             <strong>
                                 <fmt:formatNumber type="number" maxIntegerDigits="3"  maxFractionDigits="2" value="${ requestScope.moyenne }" />/20
