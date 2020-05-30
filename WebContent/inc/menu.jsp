@@ -56,12 +56,12 @@
 	                            <span class="link-text">Administration</span>
 	                        </a>
 	                        <div class="EAL_div">
-			                    <ul>
-			                        <li class="EAL_item"><a href="<c:url value="/adminCours" />" class="EAL_link"><span class="EAL_link_text"><i class="fa fa-book" ></i> Cours</span></a></li>
-			                        <li class="EAL_item"><a href="<c:url value="/adminUtilisateurs" />" class="EAL_link"><span class="EAL_link_text"><i class="fa fa-users" aria-hidden="true"></i> Utilisateurs</span></a></li>
-			                        <li class="EAL_item"><a href="<c:url value="/adminMessages" />" class="EAL_link"><span class="EAL_link_text"><i class="fa fa-envelope" aria-hidden="true"></i> Messages (${ sessionScope.notification })</span></a></li>
-			                    </ul>
-			                </div>
+				    <ul>
+					<li class="EAL_item"><a href="<c:url value="/adminCours" />" class="EAL_link"><span class="EAL_link_text"><i class="fa fa-book" ></i> Cours</span></a></li>
+					<li class="EAL_item"><a href="<c:url value="/adminUtilisateurs" />" class="EAL_link"><span class="EAL_link_text"><i class="fa fa-users" aria-hidden="true"></i> Utilisateurs</span></a></li>
+					<li class="EAL_item"><a href="<c:url value="/adminMessages" />" class="EAL_link"><span class="EAL_link_text"><i class="fa fa-envelope" aria-hidden="true"></i> Messages (${ sessionScope.notification })</span></a></li>
+				    </ul>
+				</div>
                         </li>
                     </c:if>
                     
