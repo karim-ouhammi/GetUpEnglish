@@ -8,3 +8,4 @@ Réalisé par : OUHAMMI Karim, El FILALI Hamza et KOKOYE Nithael
 
 WebContent : Contient tous les fichiers JSP/HTML et CSS (Vue dans le modèle MVC).  
 src : Contient tous les packages et  les ressources Java (Les modèles et les contrôleurs, le "M" et le "C" du MVC).
+Rapport : ...
