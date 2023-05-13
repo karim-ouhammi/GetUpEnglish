@@ -1,5 +1,5 @@
 # GetUpEnglish
-Projet en Génie Logiciel : Création d’un site pour l’apprentissage de la langue anglaise - Code Source
+Projet en Génie Logiciel : Création d’un site pour l’apprentissage de la langue anglaise
 ---------------
 Université Moulay Ismail, Faculté des sciences, Meknès
 
