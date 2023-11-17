@@ -1,5 +1,5 @@
 # GetUpEnglish
-Projet en Génie Logiciel : Création d’un site pour l’apprentissage de la langue anglaise
+Software Engineering Project: Creation of an English e-learning website
 ---------------
 University Moulay Ismail, Faculty of Sciences, Meknes, Morocco
 
