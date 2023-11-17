@@ -3,7 +3,7 @@ Software Engineering Project: Creation of an English e-learning website
 ---------------
 University Moulay Ismail, Faculty of Sciences, Meknes, Morocco
 
-Professor: Ali BEKRI  
+Professor: Ali Bekri  
 Designed and developed by: Karim Ouhammi, Hamza El Filali  et Nithael Kokoye 
 
 WebContent: Contains all JSP/HTML and CSS files (View). 
