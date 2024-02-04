@@ -1,5 +1,5 @@
 # GetUpEnglish
-Software Engineering Project: Creation of an English e-learning website
+Software Engineering Project: Creation of an English learning platform
 ---------------
 University Moulay Ismail, Faculty of Sciences, Meknes, Morocco
 
